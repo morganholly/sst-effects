@@ -804,7 +804,7 @@ template <typename FXConfig> struct Bonsai : EffectTemplateBase<FXConfig>
             return result.withName("Distort")
                 .withRange(0.f, 3.f)
                 .withDefault(1.f)
-                .withLinearScaleFormatting("dB");
+                .withLinearScaleFormatting("%", 100);
         case b_tape_bias_mode:
             return result.withType(pmd::INT)
                 .withName("Bias Filter")
